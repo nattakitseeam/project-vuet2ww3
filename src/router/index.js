@@ -14,8 +14,8 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/customer1',
-    name: 'customer1',
+    path: '/customer',
+    name: 'customer',
     
     component: () => import('../views/Customer.vue')
   },
@@ -24,6 +24,18 @@ const routes = [
     name: 'employee',
     
     component: () => import('../views/Employee.vue')
+  },
+  {
+    path: '/add_Customer',
+    name: 'add_Customer',
+    
+    component: () => import('../views/Add_Customer.vue')
+  },
+    {
+    path: '/add_employee',
+    name: 'add_employee',
+    
+    component: () => import('../views/Add_employee.vue')
   }
 ]
 
