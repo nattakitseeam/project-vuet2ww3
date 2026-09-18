@@ -31,12 +31,25 @@ const routes = [
     
     component: () => import('../views/Add_Customer.vue')
   },
-    {
+  {
     path: '/add_employee',
     name: 'add_employee',
     
     component: () => import('../views/Add_employee.vue')
+  },
+   {
+    path: '/contact',
+    name: 'contact',
+    
+    component: () => import('../views/Contact.vue')
+  },
+    {
+    path: '/add_contact',
+    name: 'add_contact',
+    
+    component: () => import('../views/Add_contact.vue')
   }
+  
 ]
 
 const router = createRouter({

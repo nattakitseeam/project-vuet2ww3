@@ -5,17 +5,22 @@
    <navbar />
    
 <!--แสดงหน้าจอ-->
-   <router-view/>
+   <router-view />
+
+<!--แสดงหน้าจอ Footer -->
+   <Footer />
+   
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
+import Footer from './components/footer.vue';
 
 
 
 export default {
   name: "App",
-  components : {Navbar}
+  components : {Navbar,Footer}
 };
 </script>
