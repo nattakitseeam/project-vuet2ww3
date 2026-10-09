@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2026 at 07:35 AM
+-- Generation Time: Oct 09, 2026 at 07:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -43,7 +43,10 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` (`contact_id`, `subject`, `detail`, `fullname`, `email`, `created_at`) VALUES
 (1, 'สอบถามข้อมูลการสมัครเรียน', 'ต้องการสอบถามรายละเอียดเกี่ยวกับการสมัครเรียน', 'สมชาย ใจดี', 'somchai@gmail.com', '2026-09-18 05:04:22'),
 (2, 'sadasd', 'asd', 'asd', 'asd', '2026-09-18 05:26:26'),
-(3, 'ซื้อของ', 'ชำรุด', 'ณัฐกิตติ์ ', 'aa@aa.com', '2026-09-18 05:28:58');
+(3, 'ซื้อของ', 'ชำรุด', 'ณัฐกิตติ์ ', 'aa@aa.com', '2026-09-18 05:28:58'),
+(4, 'sad', 'asd', 'asasd', 'asdas', '2026-10-09 03:34:31'),
+(5, 's', 'd', 'sssd', 'sssdddd', '2026-10-09 05:44:21'),
+(6, 'น้ำท่วมdd', 'chonburi', 'nattakit', 'fol@sdc.com', '2026-10-09 05:48:01');
 
 -- --------------------------------------------------------
 
@@ -67,7 +70,8 @@ CREATE TABLE `customers` (
 INSERT INTO `customers` (`customer_id`, `firstName`, `lastName`, `phone`, `username`, `password`) VALUES
 (00000001, 'มานะ', 'เด็กดี', '038756921', 'mana', '1234'),
 (00000002, 'มานี', 'ใจดี', '038756901', 'manee', '1234'),
-(00000003, 'ไก่', 'ไข่', '123', 'kai', '$2y$10$Q8N48j9Z.zt3yvrhfkyLGep1gJ/AHgfb5J4LiGThkYHM0.InI6GoW');
+(00000003, 'www', 'www', 'www', 'www', '$2y$10$Q8N48j9Z.zt3yvrhfkyLGep1gJ/AHgfb5J4LiGThkYHM0.InI6GoW'),
+(00000004, 'eeee', 'eee', 'eeeeee', 'eeeeeee', '$2y$10$lQ5tEczcx13aiAvLEGKGi.FvGGCi325/gUnas4zSHirgMdKtTFX9i');
 
 -- --------------------------------------------------------
 
@@ -90,9 +94,11 @@ CREATE TABLE `employee` (
 
 INSERT INTO `employee` (`emp_id`, `firstName`, `lastName`, `phone`, `username`, `password`) VALUES
 (000001, 'มีนา', 'มีเงิน', '038756000', 'mena', '1234'),
-(000002, 'ใจดี', 'เจได', '038756001', 'jaidee', '1234'),
+(000002, 'ใจดี222', 'เจได4', 'sad', 'qwww', '1234'),
 (000003, 'เจด', 'สดา', '1222', 'jadesada', '$2y$10$AgbMks0/R1LqQ09EJ7h8pee6BOZCqbuvxZwfeFHRScAM54fAVFZKG'),
-(000004, 'node', 'js', '123', 'vscode', '$2y$10$AuC3oLRImmXmdwve2VymLe7qyLNlUBR6arJTLciCJQixyA1fpz5Sm');
+(000004, 'node', 'js', '123', 'vscode', '$2y$10$AuC3oLRImmXmdwve2VymLe7qyLNlUBR6arJTLciCJQixyA1fpz5Sm'),
+(000005, 'asd', 'asd', 'asd', 'sad', '$2y$10$ymZ.IXN1CeOqbuFvNuovKe0zeUSYM0l3EwQfrbXrRLa2oa/JX2Juq'),
+(000006, '444', '444444', '44444', '4444', '$2y$10$AGtxOw4FZmPH0eZEiq3ole5jQpA823zNCOyoaQe6zregb4YpCYOg6');
 
 -- --------------------------------------------------------
 
@@ -155,19 +161,19 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` int(8) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `customer_id` int(8) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `emp_id` int(6) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `emp_id` int(6) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
