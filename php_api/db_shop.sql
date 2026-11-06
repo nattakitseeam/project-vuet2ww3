@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 30, 2026 at 06:53 AM
+-- Generation Time: Nov 06, 2026 at 06:06 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -98,7 +98,8 @@ INSERT INTO `customers` (`customer_id`, `firstName`, `lastName`, `phone`, `usern
 (00000001, 'มานะ', 'เด็กดี', '038756921', 'mana', '1234'),
 (00000002, 'มานี', 'ใจดี', '038756901', 'manee', '1234'),
 (00000003, 'www', 'www', 'www', 'www', '$2y$10$Q8N48j9Z.zt3yvrhfkyLGep1gJ/AHgfb5J4LiGThkYHM0.InI6GoW'),
-(00000004, 'eeee', 'eee', 'eeeeee', 'eeeeeee', '$2y$10$lQ5tEczcx13aiAvLEGKGi.FvGGCi325/gUnas4zSHirgMdKtTFX9i');
+(00000004, 'eeee', 'eee', 'eeeeee', 'user', '$2y$10$ia11qmJHUhcxcMeQ6u112OoOhlCkCCHeQ8Jm.OVa4jW8W6ggoVaiq'),
+(00000005, 'sad', 'sad', '2135456', 'name', '$2y$10$i2d3qd57hR2oRbtW7nNxBee72Opv0V5fVSP/SIz3eyPxs66HwCQaS');
 
 -- --------------------------------------------------------
 
@@ -125,7 +126,8 @@ INSERT INTO `employee` (`emp_id`, `firstName`, `lastName`, `phone`, `username`, 
 (000003, 'เจด', 'สดา', '1222', 'jadesada', '$2y$10$AgbMks0/R1LqQ09EJ7h8pee6BOZCqbuvxZwfeFHRScAM54fAVFZKG'),
 (000004, 'node', 'js', '123', 'vscode', '$2y$10$AuC3oLRImmXmdwve2VymLe7qyLNlUBR6arJTLciCJQixyA1fpz5Sm'),
 (000005, 'asd', 'asd', 'asd', 'sad', '$2y$10$ymZ.IXN1CeOqbuFvNuovKe0zeUSYM0l3EwQfrbXrRLa2oa/JX2Juq'),
-(000006, '444', '444444', '44444', '4444', '$2y$10$AGtxOw4FZmPH0eZEiq3ole5jQpA823zNCOyoaQe6zregb4YpCYOg6');
+(000006, '444', '444444', '44444', 'name', '$2y$10$l.2ZkGFETdD0AKDNDqduB.D2PQWDh7u44kb0nLke34JbJJqYrwehC'),
+(000007, 'folk', 'za', 'sad65', 'folk', '$2y$10$VE/haZMFxhJx3S/KI0bNsu3zW0xZkf7gdoV90OrTr.B6Fjxyd9G82');
 
 -- --------------------------------------------------------
 
@@ -207,13 +209,13 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` int(8) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `customer_id` int(8) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `emp_id` int(6) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `emp_id` int(6) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `products`
